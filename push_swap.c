@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 18:13:12 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/06 12:39:29 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/08/20 02:38:56 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,10 @@ t_stack	*new_stack(char **nums)
 	stack->a = ft_calloc(stack->size + 1, sizeof(long));
 	while (i < stack->size)
 	{
-		stack->a[i] = ft_atoi(nums[i]);
+		if (valid_num(nums[i]))
+			stack->a[i] = ft_atoi(nums[i]);
+		else
+			panic1(stack, nums);
 		i++;
 	}
 	stack->b = ft_calloc(stack->size + 1, sizeof(long));
