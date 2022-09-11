@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 18:14:22 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/20 02:39:49 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:04:59 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 typedef struct s_stack
 {
-	int		*a;
-	int		*b;
+	long	*a;
+	long	*b;
 	int		size;
 	int		aitems;
 	int		bitems;

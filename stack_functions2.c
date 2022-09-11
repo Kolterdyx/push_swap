@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 06:12:20 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/07/28 03:16:41 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:05:09 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ra(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = 0;
 	tmp = stack->a[0];
@@ -30,8 +30,8 @@ void	ra(t_stack *stack)
 
 void	rb(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = 0;
 	tmp = stack->b[0];
@@ -46,8 +46,8 @@ void	rb(t_stack *stack)
 
 void	rr(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = 0;
 	tmp = stack->a[0];

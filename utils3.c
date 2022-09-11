@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 02:28:39 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/20 02:40:37 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:02:04 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	valid_num(char *num)
 
 	a = ft_atoi(num);
 	b = ft_atol(num);
-	if (a == b)
+	if (a == b && ft_strlen(num) <= 11)
 		return (1);
 	return (0);
 }

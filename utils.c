@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 06:28:27 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/01 23:15:36 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:03:12 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,10 @@ void	add_instruction(t_stack *stack, char *instruction)
 
 void	quit(int code, char *message)
 {
-	ft_printf(message);
+	if (ft_strncmp(message, "Error\n", 6))
+		ft_printf(message);
+	else
+		ft_putstr_fd(message, 2);
 	exit(code);
 }
 

@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 21:04:03 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/02 00:46:30 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:04:33 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	power(int base, int exp)
 		return (base * power(base, exp - 1));
 }
 
-void	normalize2(t_stack *stack, int *arr)
+void	normalize2(t_stack *stack, long *arr)
 {
 	int	i;
 
@@ -39,7 +39,7 @@ void	normalize2(t_stack *stack, int *arr)
 void	normalize_stack(t_stack *stack, int j, int n, int i)
 {
 	long	smallest;
-	int		*arr;
+	long	*arr;
 
 	arr = ft_calloc(stack->size, sizeof(int));
 	while (j < stack->size)
@@ -55,7 +55,7 @@ void	normalize_stack(t_stack *stack, int j, int n, int i)
 			}
 			i++;
 		}
-		stack->a[n] = __INT_MAX__;
+		stack->a[n] = __LONG_MAX__;
 		arr[n] = j++;
 	}
 	normalize2(stack, arr);

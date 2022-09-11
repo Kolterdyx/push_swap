@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 06:12:20 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/01 23:57:11 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:05:23 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	rra(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = stack->aitems - 1;
 	tmp = stack->a[i];
@@ -30,8 +30,8 @@ void	rra(t_stack *stack)
 
 void	rrb(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = stack->bitems - 1;
 	tmp = stack->b[i];
@@ -46,8 +46,8 @@ void	rrb(t_stack *stack)
 
 void	rrr(t_stack *stack)
 {
-	int	i;
-	int	tmp;
+	int		i;
+	long	tmp;
 
 	i = stack->aitems - 1;
 	tmp = stack->a[i];

@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 06:55:50 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/08/02 00:39:33 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:11:01 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	sort_3(t_stack *stack)
 {
-	int	a;
-	int	b;
-	int	c;
+	long	a;
+	long	b;
+	long	c;
 
 	a = stack->a[0];
 	b = stack->a[1];
@@ -41,12 +41,11 @@ void	sort_3(t_stack *stack)
 
 void	sort_4(__unused t_stack *stack)
 {
-	while (stack->a[0] != 4)
+	while (stack->a[0] != 1)
 		ra(stack);
 	pb(stack);
 	sort_3(stack);
 	pa(stack);
-	ra(stack);
 }
 
 void	sort_5(t_stack *stack)

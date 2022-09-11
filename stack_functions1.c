@@ -6,7 +6,7 @@
 /*   By: cigarcia <cigarcia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 05:57:04 by cigarcia          #+#    #+#             */
-/*   Updated: 2022/07/28 03:43:10 by cigarcia         ###   ########.fr       */
+/*   Updated: 2022/09/11 20:05:34 by cigarcia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /** Swaps the two numbers at the top of stack A */
 void	sa(t_stack *stack)
 {
-	int	tmp;
+	long	tmp;
 
 	tmp = stack->a[0];
 	stack->a[0] = stack->a[1];
@@ -26,7 +26,7 @@ void	sa(t_stack *stack)
 /** Swaps the two numbers at the top of stack B */
 void	sb(t_stack *stack)
 {
-	int	tmp;
+	long	tmp;
 
 	tmp = stack->b[0];
 	stack->b[0] = stack->b[1];
@@ -38,7 +38,7 @@ void	sb(t_stack *stack)
  * and does the same on the stack B */
 void	ss(t_stack *stack)
 {
-	int	tmp;
+	long	tmp;
 
 	tmp = stack->a[0];
 	stack->a[0] = stack->a[1];
